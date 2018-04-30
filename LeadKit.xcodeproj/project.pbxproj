@@ -799,10 +799,6 @@
 		671461DA1EB3396E00EAB194 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				672CC2B11FEA727D00EBFB0A /* FloatingPoint */,
-				678B43F41FBA3D7C00D1F77D /* Views */,
-				67CB1BF81FAB793F0089D1B1 /* Pagination */,
-				67F139FF1FAB4FCC008175B4 /* Rx */,
 				671461DB1EB3396E00EAB194 /* Alamofire */,
 				EFBE57CE1EC35ED90040E00A /* Array */,
 				67A1FF921EBCA64A00D6C89F /* CABasicAnimation */,
@@ -815,7 +811,10 @@
 				6771DFE21EE99FF3002DCDAE /* DateFormattingArguments */,
 				6771DFE81EEA7C8F002DCDAE /* DateFormattingService */,
 				671461EA1EB3396E00EAB194 /* Double */,
+				672CC2B11FEA727D00EBFB0A /* FloatingPoint */,
 				6714639C1EB33AC200EAB194 /* NetworkService */,
+				67CB1BF81FAB793F0089D1B1 /* Pagination */,
+				67F139FF1FAB4FCC008175B4 /* Rx */,
 				671461F51EB3396E00EAB194 /* Sequence */,
 				671461FA1EB3396E00EAB194 /* String */,
 				671461FE1EB3396E00EAB194 /* Support */,
@@ -829,6 +828,7 @@
 				671462111EB3396E00EAB194 /* UIView */,
 				671462171EB3396E00EAB194 /* UIViewController */,
 				6714621B1EB3396E00EAB194 /* UIWindow */,
+				678B43F41FBA3D7C00D1F77D /* Views */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";

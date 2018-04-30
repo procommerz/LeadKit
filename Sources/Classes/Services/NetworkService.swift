@@ -50,6 +50,7 @@ open class NetworkService {
 
         self.configuration = configuration
         self.sessionManager = configuration.sessionManager
+        bindToApplicationActivityIndicator()
     }
 
     /// Perform reactive request to get mapped ObservableMappable model and http response
