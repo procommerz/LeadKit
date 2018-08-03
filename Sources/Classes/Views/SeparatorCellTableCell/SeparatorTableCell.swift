@@ -148,7 +148,7 @@ open class SeparatorTableCell: UITableViewCell, SeparatorCell {
             bottomViewRightConstraint,
             bottomViewLeftConstraint,
             bottomViewBottomConstraint
-        ].flatMap { $0 }
+            ].compactMap { $0 }
 
         NSLayoutConstraint.activate(allConstraints)
     }

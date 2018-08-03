@@ -26,17 +26,17 @@ open class App {
 
     fileprivate static let stringVendorIdentifierKey = "stringIdentifierForVendor"
     /// The value of CFBundleName
-    open static let bundleName = Bundle.main.infoDictionary?["CFBundleName"] as? String ?? ""
+    public static let bundleName = Bundle.main.infoDictionary?["CFBundleName"] as? String ?? ""
     /// The value of CFBundleShortVersionString
-    open static let shortVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? ""
+    public static let shortVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? ""
     /// The value of CFBundleVersion
-    open static let bundleVersion = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? ""
+    public static let bundleVersion = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? ""
 
     /**
      Return app's version
      - returns: shortBundleVersion.bundleVersion
      */
-    open static var version: String {
+    public static var version: String {
         return App.shortVersion + "." + App.bundleVersion
     }
 
@@ -44,7 +44,7 @@ open class App {
      Return device identifier
      - returns: UUIDString
      */
-    open static var deviceUniqueIdentifier: String {
+    public static var deviceUniqueIdentifier: String {
         if let vendorIdentifier = UserDefaults.standard.string(forKey: App.stringVendorIdentifierKey) {
             return vendorIdentifier
         }
