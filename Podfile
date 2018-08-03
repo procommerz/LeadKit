@@ -3,7 +3,7 @@ abstract_target 'LeadKit' do
   pod "RxSwift", '4.0.0'
   pod "RxCocoa", '4.0.0'
   pod "RxAlamofire", '4.0.0'
-  pod "ObjectMapper", '~> 3.0.0'
+  pod "ObjectMapper", '~> 3.3'
 
   inhibit_all_warnings!
 
