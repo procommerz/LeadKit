@@ -86,7 +86,7 @@ Pod::Spec.new do |s|
     ss.dependency "RxSwift", '4.0.0'
     ss.dependency "RxCocoa", '4.0.0'
     ss.dependency "RxAlamofire", '4.0.0'
-    ss.dependency "ObjectMapper", '~> 3.0.0'
+    ss.dependency "ObjectMapper"
 
     ss.ios.dependency "TableKit", '~> 2.5.0'
     ss.ios.dependency "UIScrollView-InfiniteScroll", '~> 1.0.0'
@@ -111,7 +111,7 @@ Pod::Spec.new do |s|
     ss.dependency "RxSwift", '4.0.0'
     ss.dependency "RxCocoa", '4.0.0'
     ss.dependency "RxAlamofire", '4.0.0'
-    ss.dependency "ObjectMapper", '~> 3.0.0'
+    ss.dependency "ObjectMapper"
   end
 
   s.default_subspec = 'Core'
