@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name            = "LeadKit"
-  s.version         = "farmyBranchXcode10"
+  s.version         = "10.0.0"
   s.summary         = "iOS framework with a bunch of tools for rapid development"
   s.homepage        = "https://github.com/TouchInstinct/LeadKit"
   s.license         = "Apache License, Version 2.0"
-  s.author          = "Touch Instinct"
+  s.author          = "Procommerz"
   s.source          = { :git => "https://github.com/procommerz/LeadKit", :tag => s.version }
   s.platform        = :ios, '9.0'
 
