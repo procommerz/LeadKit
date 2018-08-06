@@ -17,7 +17,7 @@ PODS:
 
 DEPENDENCIES:
   - CocoaLumberjack/Swift (~> 3.3.0)
-  - ObjectMapper (~> 3.3)
+  - ObjectMapper
   - RxAlamofire (= 4.0.0)
   - RxCocoa (= 4.0.0)
   - RxSwift (= 4.0.0)
@@ -45,6 +45,6 @@ SPEC CHECKSUMS:
   TableKit: 42d4dff2944f273cdeec2ef6352064eb6a9a355b
   UIScrollView-InfiniteScroll: c132d6d5851daff229ab4a1060ccf70a05a051c9
 
-PODFILE CHECKSUM: 948618675781a99bdc673a4a65071acce61a89f2
+PODFILE CHECKSUM: 6fb8bfc48ea6c5137a1923d1cfcfcbafbd2df59f
 
 COCOAPODS: 1.5.3
