@@ -46,4 +46,8 @@ public struct ApiRequestParameters {
         self.headers = headers
     }
 
+    public var requestUrl: URLConvertible {
+        return url
+    }
+
 }
