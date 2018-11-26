@@ -50,4 +50,20 @@ public struct ApiRequestParameters {
         return url
     }
 
+    public var requestMethod: HTTPMethod {
+        return method
+    }
+
+    public var requestParameters: Parameters? {
+        return parameters
+    }
+
+    public var requestEncoding: ParameterEncoding {
+        return encoding
+    }
+
+    public var requestHeaders: HTTPHeaders? {
+        return headers
+    }
+
 }
