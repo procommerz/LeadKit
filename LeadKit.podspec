@@ -88,7 +88,7 @@ Pod::Spec.new do |s|
     ss.dependency "RxAlamofire", '5.0.0'
     ss.dependency "ObjectMapper"
 
-    ss.ios.dependency "TableKit", '~> 2.5.0'
+    ss.ios.dependency "TableKit", '2.9.0'
     ss.ios.dependency "UIScrollView-InfiniteScroll", '~> 1.0.0'
   end
 
