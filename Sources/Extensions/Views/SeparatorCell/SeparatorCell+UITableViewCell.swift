@@ -41,11 +41,11 @@ public extension SeparatorCell where Self: UITableViewCell {
 private extension UIView {
 
     func bringToFront(in view: UIView) {
-        view.bringSubview(toFront: self)
+        view.bringSubviewToFront(self)
     }
 
     func sendToBack(in view: UIView) {
-        view.sendSubview(toBack: self)
+        view.sendSubviewToBack(self)
     }
 
 }

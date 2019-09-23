@@ -321,13 +321,13 @@ final public class PaginationWrapper<Cursor: ResettableCursorType, Delegate: Pag
     private func bindAppStateNotifications() {
         let notificationCenter = NotificationCenter.default.rx
 
-        notificationCenter.notification(.UIApplicationWillResignActive)
+        notificationCenter.notification(UIApplication.willResignActiveNotification)
             .subscribe(onNext: { [weak self] _ in
                 self?.applicationCurrentyActive.value = false
             })
             .disposed(by: disposeBag)
 
-        notificationCenter.notification(.UIApplicationDidBecomeActive)
+        notificationCenter.notification(UIApplication.didBecomeActiveNotification)
             .subscribe(onNext: { [weak self] _ in
                 self?.applicationCurrentyActive.value = true
             })
