@@ -82,7 +82,7 @@ Pod::Spec.new do |s|
       "Sources/Extensions/Array/Array+SeparatorRowBoxExtensions.swift"
     ]
 
-    ss.dependency "CocoaLumberjack/Swift", '~> 3.3.0'
+    ss.dependency "CocoaLumberjack/Swift", '3.5.3'
     ss.dependency "RxSwift", '5.0.0'
     ss.dependency "RxCocoa", '5.0.0'
     ss.dependency "RxAlamofire", '5.0.0'
@@ -107,7 +107,7 @@ Pod::Spec.new do |s|
       "Sources/Extensions/Array/Array+SeparatorRowBoxExtensions.swift"
     ]
 
-    ss.dependency "CocoaLumberjack/Swift", '~> 3.3.0'
+    ss.dependency "CocoaLumberjack/Swift", '3.5.3'
     ss.dependency "RxSwift", '5.0.0'
     ss.dependency "RxCocoa", '5.0.0'
     ss.dependency "RxAlamofire", '5.0.0'
