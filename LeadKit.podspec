@@ -6,10 +6,10 @@ Pod::Spec.new do |s|
   s.license         = "Apache License, Version 2.0"
   s.author          = "Procommerz"
   s.source          = { :git => "https://github.com/procommerz/LeadKit", :tag => s.version }
-  s.platform        = :ios, '9.0'
+  s.platform        = :ios, '12.0'
 
   s.subspec 'UIColorHex' do |ss|
-    ss.ios.deployment_target = '8.0'
+    ss.ios.deployment_target = '12.0'
     ss.tvos.deployment_target = '9.0'
     ss.watchos.deployment_target = '2.0'
 
@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Core' do |ss|
-    ss.ios.deployment_target = '9.0'
+    ss.ios.deployment_target = '12.0'
     ss.tvos.deployment_target = '9.0'
     ss.watchos.deployment_target = '2.0'
 
@@ -93,7 +93,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Core-iOS-Extension' do |ss|
-    ss.platform = :ios, '9.0'
+    ss.platform = :ios, '12.0'
 
     ss.source_files = "Sources/**/*.swift"
 

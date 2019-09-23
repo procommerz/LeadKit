@@ -1,9 +1,9 @@
 PODS:
-  - Alamofire (4.7.3)
+  - Alamofire (4.8.2)
   - CocoaLumberjack/Default (3.3.0)
   - CocoaLumberjack/Swift (3.3.0):
     - CocoaLumberjack/Default
-  - ObjectMapper (3.3.0)
+  - ObjectMapper (3.5.1)
   - RxAlamofire (4.0.0):
     - RxAlamofire/Core (= 4.0.0)
   - RxAlamofire/Core (4.0.0):
@@ -25,7 +25,7 @@ DEPENDENCIES:
   - UIScrollView-InfiniteScroll (~> 1.0.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Alamofire
     - CocoaLumberjack
     - ObjectMapper
@@ -36,9 +36,9 @@ SPEC REPOS:
     - UIScrollView-InfiniteScroll
 
 SPEC CHECKSUMS:
-  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
-  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
   RxAlamofire: 6ea579ac53bf14cb4bc7049a3866e5a769989b1d
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
@@ -47,4 +47,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 6fb8bfc48ea6c5137a1923d1cfcfcbafbd2df59f
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.0.beta.2
