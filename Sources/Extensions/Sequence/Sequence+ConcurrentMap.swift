@@ -32,7 +32,7 @@ public extension Sequence {
     ///   - qos: Target global dispatch queue, by quality of service class.
     ///   - transform: Transform closure
     /// - Returns: Observable of array which contains transform return type
-    func concurrentRxMap<R>(concurrentOperationCount: Int = ProcessInfo.processInfo.activeProcessorCount,
+    /*func concurrentRxMap<R>(concurrentOperationCount: Int = ProcessInfo.processInfo.activeProcessorCount,
                             qos: DispatchQoS = .default,
                             transform: @escaping ((Iterator.Element) throws -> R)) -> Observable<[R]> {
 
@@ -60,6 +60,6 @@ public extension Sequence {
             }
             .toArray()
             .map { $0.sorted { $0.idx < $1.idx }.flatMap { $0.results } }
-    }
+    }*/
 
 }
