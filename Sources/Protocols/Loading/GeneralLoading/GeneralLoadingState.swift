@@ -38,7 +38,7 @@ extension GeneralLoadingState: LoadingState {
         return .initial
     }
 
-    public static var emptyState: GeneralLoadingState<DS> {
+    public static func emptyState(from: DataSourceType) -> GeneralLoadingState<DS> {
         return .empty
     }
 

@@ -81,5 +81,5 @@ public protocol PaginationWrapperDelegate: class {
     func retryLoadMoreButtonIsAboutToHide()
 
     // Delegate method, used to clear view if placeholder is shown.
-    func clearView()
+    func clearView(using dataSource: DataSourceType?)
 }

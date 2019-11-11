@@ -175,7 +175,7 @@ final public class PaginationWrapper<Cursor: ResettableCursorType, Delegate: Pag
 
             replacePlaceholderViewIfNeeded(with: errorView)
 
-            delegate?.clearView()
+            delegate?.clearView(using: nil)
         } else if case .loadingMore = afterState {
             removeInfiniteScroll()
 
@@ -304,8 +304,8 @@ final public class PaginationWrapper<Cursor: ResettableCursorType, Delegate: Pag
                     self?.onResultsState(newItems: newItems, from: from, afterState: after)
                 case .error(let error, let after):
                     self?.onErrorState(error: error, afterState: after)
-                case .empty:
-                    self?.delegate?.clearView()
+                case .empty(let from):
+                    self?.delegate?.clearView(using: from)
                     self?.onEmptyState()
                 case .exhausted:
                     self?.onExhaustedState()

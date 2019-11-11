@@ -25,7 +25,7 @@ public protocol LoadingState {
     associatedtype DataSourceType: DataSourceProtocol
 
     static var initialState: Self { get }
-    static var emptyState: Self { get }
+    static func emptyState(from: DataSourceType) -> Self
 
     static func loadingState(after: Self) -> Self
     static func resultState(result: DataSourceType.ResultType, from: DataSourceType, after: Self) -> Self

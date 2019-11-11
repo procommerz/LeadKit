@@ -96,7 +96,7 @@ public final class PaginationLoadingViewModel<C: ResettableCursorDataSource>:
         if case .exhausted? = error as? CursorError, case .loading(let after) = configuration.state {
             switch after {
             case .initial, .empty: // cursor exhausted after creation
-                configuration.state = .empty
+                configuration.state = .empty(from: nil)
             default:
                 super.onGot(error: error)
             }

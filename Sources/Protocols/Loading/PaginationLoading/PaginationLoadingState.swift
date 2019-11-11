@@ -27,7 +27,7 @@ public indirect enum PaginationLoadingState<DS: DataSourceProtocol> {
     case loadingMore(after: PaginationLoadingState)
     case results(newItems: DS.ResultType, from: DS, after: PaginationLoadingState)
     case error(error: Error, after: PaginationLoadingState)
-    case empty
+    case empty(from: DS?)
     case exhausted
 
 }
@@ -40,8 +40,8 @@ extension PaginationLoadingState: LoadingState {
         return .initial
     }
 
-    public static var emptyState: PaginationLoadingState<DS> {
-        return .empty
+    public static func emptyState(from: DataSourceType) -> PaginationLoadingState<DS> {
+        return .empty(from: from)
     }
 
     public static func loadingState(after: PaginationLoadingState<DS>) -> PaginationLoadingState<DS> {

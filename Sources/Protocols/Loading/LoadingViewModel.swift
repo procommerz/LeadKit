@@ -75,7 +75,7 @@ public class LoadingViewModel<VMC: LoadingConfiguration>: LoadingProtocol
 
     func onGot(result: DataSourceType.ResultType, from dataSource: DataSourceType) {
         if configuration.isEmptyResult(result: result) {
-            configuration.state = .emptyState
+            configuration.state = .emptyState(from: dataSource)
         } else {
             configuration.state = .resultState(result: result,
                                                from: dataSource,
