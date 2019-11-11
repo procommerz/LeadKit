@@ -33,6 +33,8 @@ public final class TotalCountCursor<LT, ET, CC: TotalCountCursorConfiguration>: 
 
     private var elements: [ET] = []
 
+    public var currentPage: Int
+
     public private(set) var totalCount: Int = .max
 
     private let disposeBag = DisposeBag()
@@ -51,10 +53,12 @@ public final class TotalCountCursor<LT, ET, CC: TotalCountCursorConfiguration>: 
 
     public init(configuration: CC) {
         self.configuration = configuration
+        self.currentPage = 1
     }
 
     public required init(resetFrom other: TotalCountCursor) {
         self.configuration = other.configuration.reset()
+        self.currentPage = 1
     }
 
     public func loadNextBatch() -> Single<[ET]> {
@@ -65,6 +69,7 @@ public final class TotalCountCursor<LT, ET, CC: TotalCountCursorConfiguration>: 
             .do(onNext: { listingResult in
                 self.totalCount = listingResult.totalCount
                 self.elements += listingResult.results
+                self.currentPage += 1
             })
             .map {
                 $0.results
